@@ -7,7 +7,7 @@ def home(request):
 	numbers = [1,2,3,4,5]
 	name = 'Achraf Derdak'
 	args = {'myName': name, 'numbers': numbers}
-	return render(request, 'accounts/home.html', args)
+	return redirect('/dashboard')
 
 
 def register(request):
